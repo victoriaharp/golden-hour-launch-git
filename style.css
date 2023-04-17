@@ -1,81 +1,173 @@
-/* Comments for Reference */
+/*  NOTES
+- fonts:
+    - Didot - Regular (headings)
+    - Baskerville - Regular (small text)
+    - Proxima Nova - Medium
+- Colors:
+    - beige - F8F6F4
+    - pink - #f59186
+- Map: [https://snazzymaps.com/style/115413/light-and-beige](https://snazzymaps.com/style/115413/light-and-beige)
 
-*{
-    margin: 0;
+- changing the fonts
+- changing the background images
+- typography changes
+    - general styles
+    - featured text (changing the color of the text)
+    - font-size
+- button styles
+- image styles (rounded edges, etc)
+
+*/
+
+
+
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-/* temporary styles - delete when ready */
+/*  Temporary Styles */
 
-section     {border: 1px solid;}
-div         {border: 1px solid;}
-h1, h2, h3, h4, h5, h6 {border: 1px solid;}
-a           {border: 1px solid;}
+/* * {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+} 
 
-/* end temporary styles */
+html, 
+body {
+    border: none;
+}
 
-/* Utility Classes */
-.padded-sm{padding: 2.5%;}
-.padded-md{padding: 5%;}
-.padded-lg{padding:10%;}
-
-.padded-05{padding: 0.5rem;}
-.padded-1{padding:1rem;}
-.padded-2{padding:2rem;}
-
-.padded-t{padding-top:5%;}
-.padded-b{padding-bottom: 5%;}
-.padded-l{padding-left:5%;}
-.padded-r{padding-right: 5%}
-
-.padded-tb{padding-top: 5%; padding-bottom:5%}
-.padded-lr{padding-left: 5%; padding-right:5%}
+h1,h2,h3,h4,h5,h6,p, a {
+    border: 2px solid rgb(179, 84, 84);
+} */
 
 
+/* Re-usable Utiity Classes  */
+img{max-width: 100%;}
 
-.margin-sm{margin: 2.5%;}
-.margin-md{margin: 5%;}
-.margin-lg{margin:10%;}
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
 
-.padded-05{padding: 0.5rem;}
-.padded-1{padding:1rem;}
-.padded-2{padding:2rem;}
 
-.padded-t{padding-top:5%;}
-.padded-b{padding-bottom: 5%;}
-.padded-l{padding-left:5%;}
-.padded-r{padding-right: 5%}
+.padded    { padding: 5%;    }
+.padded-1,
+.grid.padded-1  { padding: 1rem;  }
+.padded-2,
+.grid.padded-2  { padding: 2rem;  }
 
-.padded-tb{padding-top: 5%; padding-bottom:5%}
-.padded-lr{padding-left: 5%; padding-right:5%}
 
-.tall-40{min-height: 40vh;}
-.tall-50{min-height: 50vh;}
-.tall-60{min-height: 60vh;}
-.tall-70{min-height: 70vh;}
-.tall-80{min-height: 80vh;}
-.tall-90{min-height: 90vh;}
+.margin-b-0 { margin-bottom: 0; }
 
-.right{text-align: right;}
-.center{text-align: center;}
-.left{text-align: left;}
+.bg-light   {background-color:#F8F6F4;}
+.bg-featured { background-color: #018ca2;  }
+.bg-dark     { background-color: #24282B;  }
 
-/* images */
+.text-featured  {color: #f59186;}
+.light-text     {color: white; } 
+
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+/* General typography & universal styles  */
+body{
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(60, 60, 60);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'didot', serif;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+h1{font-size: 3.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.8rem;}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child{
+    margin-bottom: 0;
+}
+
+p{
+    line-height: 1.4;
+    margin-bottom: 1.1rem;
+}
+
+.text-medium{font-size:2.5rem;}
+.text-large{font-size: 3.5rem;}
+.text-xl{font-size: 4rem;}
+.text-xxl{font-size: 8.5rem;}
+
+ul{
+    margin-left: 1rem;
+}
+li{
+    padding-left: 0.5rem;
+}
+.text-lato{font-family: lato;}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.button{
+    color: inherit;
+    border: 1px solid;
+    color:#f59186;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+}
+.button:hover{
+    /* text-transform: uppercase; */
+    background-color:#f59186;
+    color: white;
+
+}
+/* Header & Footer */
+footer{
+    padding-bottom: 0.5rem;
+    color: rgb(120, 120, 120);
+}
+
+/* Images & Background Images */
 .bg-image{
     background-size: cover;
     background-position: center;
     background-color:rgb(230, 228, 222);
-    background-repeat: no-repeat;
 }
-.golden-hour-1{
-    background-image: url('/images/golden-hour-1.jpg');
-}
-.logo{
-    background-image: url('/images/logos/TGH-logo1.png');
-}
+.bg-image-leaves    {background-image: url('/images/leaves-light.png');}
+.bg-image-stone    {background-image: url('/images/stone.png');}
+.bg-image-map    {background-image: url('/images/light-colored-map.png');}
+.bg-image-yogi    {background-image: url('/images/zen-studio-2.jpg');}
+.bg-image-room    {background-image: url('/images/zen-studio-3.jpg');}
+.bg-image-leaves-v    {background-image: url('/images/zen-studio-1.jpg');}
 
-
+.shape-teardrop{
+    border-radius: 20rem;
+    border-bottom-right-radius: 0;
+    border: none;
+}
+.shape-window{
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+}
 
 
 
@@ -85,13 +177,13 @@ a           {border: 1px solid;}
 
 Gridlex Media Queries
 
-@media (max-width: 36em)    Max 576px   _xs-*
-@media (max-width: 48em)    Max 768px   _sm-*
-@media (max-width: 64em)    Max 1024px  _md-*
-@media (max-width: 80em)    Max 1280px  _lg-*
+@media (max-width: 36em)	Max 576px	_xs-*
+@media (max-width: 48em)	Max 768px	_sm-*
+@media (max-width: 64em)	Max 1024px	_md-*
+@media (max-width: 80em)	Max 1280px	_lg-*
 
 */
-/* 
+
 @media (max-width: 64em) {
     h2, h4, p, ul{text-align: center;}
 }
@@ -111,4 +203,4 @@ Gridlex Media Queries
 
 @media (max-width: 22em) {
     .text-xxl{font-size: 2.5rem;}
-} */
+}

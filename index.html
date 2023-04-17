@@ -1,43 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Title -->
-        <Title>Website Title Goes Here</Title>
 
-        <!-- Viewport Meta Tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------- This is the head of the HTML for linking external resources & metadata ------->
+    <head> 
+    
+            <!-- The title for SEO & browser tabs -->
+            <title> Website Title Here </title>
 
-        <!-- Gridlex -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- Google Fonts (swap out for actual website font as needed)-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-
-        <!-- Custom stylesheet -->
-        <link rel="stylesheet" href="/style.css">
-
+            <!-- Viewport meta tag -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <!-- Gridlex -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    
+            <!-- Add Google Fonts Here  -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+            <!-- My own custom stylesheet -->
+            <link rel="stylesheet" href="/style.css">
+       
     </head>
+
+    <!------ This is the body, where all of the contents of our page go  ------->
     <body>
 
-        <!-- header -->
-        <header class="grid-center">
-            <div class="col-8 bg-logo"></div>
-            <nav class="col-4 right">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
+        <!-- intro section -->
+
+        <header class="grid tall-70 padded bg-image bg-image-stone center">
+            <div class="col-12-middle">
+                <h1 class="text-xxl text-featured">zen.studio</h1>
+            </div>
         </header>
 
-        <!-- section 1 - big photo -->
-        <section>
-            <div class="bg-image golden-hour-1 tall-90"></div>
+
+        <section class="grid-center padded bg-light">
+            <div class="col-4_md-6_s-12 padded-2">
+                <img src="/images/zen-studio-2.jpg" class="shape-teardrop">
+            </div>
+            <div class="col-6_sm-12-middle sm-center">
+                <h2 class="text-featured">Welcome home.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quod omnis labore id at autem aspernatur possimus culpa? Ab tempora, itaque ex nesciunt maiores sequi deleniti magni dolores perferendis qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officia distinctio, nemo totam fugiat voluptatibus provident quasi dicta eius error laudantium deserunt amet necessitatibus expedita magnam, hic accusantium! Maiores, iure?</p>
+                <a href="#" class="button">Book a session</a>
+            </div>
         </section>
 
+        <!-- banner section -->
+        <section class="padded bg-image tall-50 grid right bg-image bg-image-leaves-v">
+            <div class="col-12-middle">
+                <h3 class="sm-center">don't forget to breathe.</h3>
+            </div>
+        </section>
+
+        <!-- studio section -->
+        <section class="padded bg-light grid-center">
+            <div class="col-5-middle_md-6_sm-12 padded-1">
+                <h2 class="text-featured">Our studio.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, mollitia officiis. Veritatis tempore fugit alias. Vitae assumenda dicta minus incidunt, veniam nesciunt quaerat voluptatibus a eum aspernatur deleniti repellat quo!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eligendi saepe, dignissimos corrupti, sed nemo quidem architecto culpa voluptatibus cupiditate possimus amet recusandae omnis numquam eius repellendus voluptatem! Officia, perspiciatis!</p>
+                <ul>
+                    <li>Option one: gold</li>
+                    <li>Option two: silver</li>
+                    <li>Option three: bronze</li>
+                </ul>
+            </div>
+            <div class="col-4_md-6_sm-12 padded-1 grid">
+                <div class="bg-image bg-image-room col-12 shape-window tall-70"></div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="grid-center padded text-featured">
+            <div class="col-12 center padded-2">
+                <h2 class="text-xl">Find us. <span class="sm-block">Contact us.</span></h2>
+            </div>
+            <div class="col-4-middle_md-5_sm-12 padded-2 text-lato">
+                <h4 class="text-medium"><strong>Zen Studio.</strong></h4>
+                <p>123 John Smith Ave. Sydney, Aus.</p>
+                <p><em>Take the second left after the sign.</em></p>
+                <strong><p><a href="#">Email: zenstudio@zen.com</a></p>
+                <p><a href="#">Call: 1-800-555-5555</a></p></strong>
+            </div>
+            <div class="col-7_md-12 bg-image bg-image-map tall-50"></div>
+        </section>
+
+        <!-- footer -->
+        <footer class="center">
+            <p>Copyright 2023</p>
+        </footer>
     </body>
 </html>
