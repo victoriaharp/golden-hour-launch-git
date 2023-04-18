@@ -246,7 +246,7 @@ footer{
     display: block;
     width: 100%;
     font-size: 1rem;
-    vertical-align: top;
+;
   }
   
   input:focus,
