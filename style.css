@@ -4,8 +4,19 @@
     - Baskerville - Regular (small text)
     - Proxima Nova - Medium
 - Colors:
-    - beige - F8F6F4
-    - pink - #f59186
+    - #BE4D06
+    - #C37746
+    - #D5AE81
+    - #F1BF5B
+    - #624735
+    - #EFEBE4
+    - #486A7C
+    - #8AA0A1
+    - #C0C1AC
+    - #CCA35F
+    - #C37746
+    - #C06705
+
 - Map: [https://snazzymaps.com/style/115413/light-and-beige](https://snazzymaps.com/style/115413/light-and-beige)
 
 - changing the fonts
@@ -27,6 +38,10 @@
     box-sizing: border-box;
 }
 
+[class*=grid]{
+    margin:0;
+}
+
 /*  Temporary Styles */
 
 /* * {
@@ -46,7 +61,10 @@ h1,h2,h3,h4,h5,h6,p, a {
 
 /* Re-usable Utiity Classes  */
 img{max-width: 100%;}
+html{scroll-behavior: smooth;}
 
+.tall-10    {min-height: 10vh;}
+.tall-30    {min-height: 30vh;}
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
@@ -67,7 +85,7 @@ img{max-width: 100%;}
 .bg-featured { background-color: #018ca2;  }
 .bg-dark     { background-color: #24282B;  }
 
-.text-featured  {color: #f59186;}
+.text-featured  {color: #BE4D06;}
 .light-text     {color: white; } 
 
 
@@ -89,7 +107,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{font-size: 3.5rem;}
-h2{font-size: 2rem;}
+h2{font-size: 2.2rem;}
 h3{font-size: 1.8rem;}
 
 h1:last-child,
@@ -124,22 +142,33 @@ a{
     text-decoration: none;
 
 }
+a:hover{
+    color: #EFEBE4;
+    text-decoration: underline;
+}
 
 .button{
     color: inherit;
     border: 1px solid;
-    color:#f59186;
+    color:#BE4D06;
     border-radius: 2rem;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
     display: inline-block;
+    margin-top: 1rem;
 }
 .button:hover{
     /* text-transform: uppercase; */
-    background-color:#f59186;
+    background-color:#BE4D06;
     color: white;
 
 }
+
+/* .top-header{
+    overscroll-behavior: contain;
+} */
+
+
 /* Header & Footer */
 footer{
     padding-bottom: 0.5rem;
@@ -150,14 +179,21 @@ footer{
 .bg-image{
     background-size: cover;
     background-position: center;
-    background-color:rgb(230, 228, 222);
+    background-color: #EFEBE4;
 }
-.bg-image-leaves    {background-image: url('/images/leaves-light.png');}
-.bg-image-stone    {background-image: url('/images/stone.png');}
-.bg-image-map    {background-image: url('/images/light-colored-map.png');}
-.bg-image-yogi    {background-image: url('/images/zen-studio-2.jpg');}
-.bg-image-room    {background-image: url('/images/zen-studio-3.jpg');}
-.bg-image-leaves-v    {background-image: url('/images/zen-studio-1.jpg');}
+.bg-headshot-1    {background-image: url('/images/leaves-light.png');}
+.bg-golden-3    {background-image: url('/images/golden-hour-3.jpg');}
+.bg-golden-4    {background-image: url('/images/golden-hour-4.jpg');}
+.bg-headshot-1{background-image: url('/images/headshot-1.png');}
+.bg-resource-1{background-image: url('/images/resource-1.jpg');}
+.bg-resource-2{background-image: url('/images/resource-2.jpg');}
+.bg-resource-3{background-image: url('/images/resource-3.jpg');}
+
+.logo   {background-image: url('/images/logos/TGH-logo1.png');}
+.bg-featured{
+    background-color: #C37746;
+}
+.bg-featured-2{background-color: #C0C1AC;}
 
 .shape-teardrop{
     border-radius: 20rem;
@@ -170,8 +206,92 @@ footer{
 }
 
 
+/* hover overlay free resources section stylizing */
+.hover-container {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+  }
+  
+  .hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: white;
+  }
+  
+  .hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .hover-inner p {
+    margin-bottom: 0;
+  }
 
+/* get in touch section */
+  input, textarea {
+    border-style: solid;
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #e67e22;
+    /* featured color */
+  }
+  
+  textarea {
+    min-height: 7em;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+  
+  form [class*=col-] {
+    padding: 5px;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  form .button {
+    width:100%;
+  }
+    @media(max-width:768px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }
 
+   
 
 /* 
 
