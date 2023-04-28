@@ -210,9 +210,13 @@ video{
     background-position: center;
     background-color: #EFEBE4;
 }
-.bg-headshot-1    {background-image: url('/images/leaves-light.png');}
+
+.bg-golden-2    {background-image: url('/images/the-golden-hour/6.jpeg');}
 .bg-golden-3    {background-image: url('/images/golden-hour-3.jpg');}
 .bg-golden-4    {background-image: url('/images/golden-hour-4.jpg');}
+.bg-golden-5    {background-image: url('/images/the-golden-hour/IMG_0366.jpeg');}
+.bg-golden-6    {background-image: url('/images/the-golden-hour/1.jpeg');}
+.bg-golden-7    {background-image: url('/images/the-golden-hour/IMG_3489.jpeg');}
 .bg-headshot-1{background-image: url('/images/headshot-1.png');}
 .bg-resource-1{background-image: url('/images/resource-1.jpg');}
 .bg-resource-2{background-image: url('/images/resource-2.jpg');}
