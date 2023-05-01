@@ -84,8 +84,9 @@ html{scroll-behavior: smooth;}
 .padded-2,
 .grid.padded-2  { padding: 2rem;  }
 
-
+.more-margin {margin-bottom: 2rem;}
 .margin-b-0 { margin-bottom: 0; }
+.border {border: 20px solid #C0C1AC}
 
 
 .bg-light   {background-color:#F8F6F4;}
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 1rem;
     font-weight: normal;
 }
-.more-margin {margin-bottom: 2rem;}
+
 h1{font-size: 3.5rem;}
 h2{font-size: 2.5rem;}
 h3{font-size: 1.8rem;}
