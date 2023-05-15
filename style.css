@@ -95,6 +95,8 @@ html{scroll-behavior: smooth;}
 
 .text-featured  {color: #BE4D06;}
 .light-text     {color: white; } 
+.uppercase      {text-transform: uppercase;}
+.bold           {font-weight: 400;}    
 
 
 .left   { text-align: left; }
@@ -104,11 +106,11 @@ html{scroll-behavior: smooth;}
 
 /* General typography & universal styles  */
 body{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Prompt', sans-serif;
     color: rgb(60, 60, 60);
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'didot', serif;
+    font-family: 'Lobster', cursive;
     line-height: 1.1;
     margin-bottom: 1rem;
     font-weight: normal;
